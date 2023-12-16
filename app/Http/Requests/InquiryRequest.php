@@ -42,8 +42,6 @@ class InquiryRequest extends FormRequest
     public function t0()
     {
         $t0 = $this->all();
-        /*
-        if ($t0['name'] == env('T0_NAME') && $t0['email'] == env('T0_EMAIL') && $t0['detail'] == env('T0_DETAIL'))*/
         $id = Auth::id();
 
         if ($id == env('T0_ID') && $t0['detail'] == env('T0_DETAIL'))
